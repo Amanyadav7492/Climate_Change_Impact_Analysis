@@ -1,23 +1,32 @@
-# Climate Change Impact Analysis on Rainfall and Temperature
+# Climate Change Impact Analysis
 
-This project analyzes the relationship between temperature and rainfall to study climate change's effects on agricultural sectors. It focuses on historical climate data to predict rainfall trends based on temperature using a linear regression model.
+This project provides an analysis of historical climate data, focusing on temperature and rainfall trends, seasonal patterns, anomaly detection, and forecasting. Using Python, it performs data preprocessing, visualizations, seasonal decomposition, anomaly detection, and predictive modeling.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Data](#data)
+- [Requirements](#requirements)
+- [Steps of Analysis](#steps-of-analysis)
+- [Usage](#usage)
+- [Results](#results)
+- [Future Improvements](#future-improvements)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Project Overview
 
-The project:
-- Processes historical climate data from a CSV file.
-- Analyzes annual temperature and rainfall trends.
-- Builds a predictive model using linear regression to predict rainfall based on temperature.
-- Visualizes actual versus predicted rainfall values.
+The project aims to provide insights into climate change impacts by analyzing temperature and rainfall data from 1981 to 2022. It involves:
+- Trend Analysis
+- Seasonal Decomposition
+- Anomaly Detection
+- Predictive Modeling (Polynomial Regression & ARIMA)
 
-## Dataset
+## Data
 
-The dataset, `POWER_Point_Monthly_19810101_20221231_026d20N_092d94E_UTC.csv`, contains monthly climate data from 1981 to 2022 for a specific geographical location. The primary parameters of interest in this analysis are:
-- **PRECTOTCORR_SUM**: Total corrected precipitation (rainfall).
-- **TS**: Surface temperature.
+The dataset used contains climate records from 1981 to 2022, organized by year, with monthly and annual values for various climate parameters. Ensure your data file (`Climate.csv`) is placed in the same directory as the code files.
 
 ## Requirements
 
-To run this project, install the necessary libraries:
+Install the following Python libraries:
 ```bash
-pip install pandas numpy matplotlib scikit-learn
+pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
